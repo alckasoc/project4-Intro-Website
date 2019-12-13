@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/project4-Subjects-APC.css">
+  <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+  <title>Re-learning/AP Calculus AB</title>
+</head>
+<body>
+  <!--================HEADER===============-->
+  <header>
+    <nav>
+      <div class="hamburger openClose" onclick="openNav()">
+        <div class="hamburger-div">
+          <span class="span"></span>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Subjects</a>
+            <ul>
+              <li><a href="project4-Subjects-Java.html">Java</a></li>
+              <li><a href="project4-Subjects-APC.html">AP Calculus AB</a></li>
+              <li><a href="project4-Subjects-APM.html">AP Chinese</a></li>
+              <li><a href="project4-Subjects-APUSH.html">AP U.S. History</a></li>
+              <li><a href="project4-Subjects-APL.html">AP Language</a></li>
+              <li><a href="project4-Subjects-APS.html">AP Statistics</a></li>
+            </ul>
+          </li>
+          <li><a href="project4-Contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--================MAIN=================-->
+  <main>
+    <div class="main">
+      <h1>AP Calculus AB</h1>
+      <div class="java-accordion">
+        <div class="java-accordion-inner">
+          <button class="accordion1"><b><u>1.1: Tangent Line and Area Under Curves</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APCtAa.png" alt="Sorry :(">
+              <img src="img/APC-leftendpoints.png" alt="Sorry :(">
+              <img src="img/APC-rightendpoints.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Tangent Line Problem:</b> It is quite tedious and difficult to find a tangent line
+                of a graph at a single point using Pre-Calculus. Depicted in the picture, one would have to
+                repeatedly create secant lines and find the slope until the distance between the 2 points used
+                decreases to near zero where the secant line begins to approach the tangent line. This idea of a
+                limit process where the distance on the x-axis between the 2 points approach zero is a fundamental
+                idea in Calculus. <br> As shown in the graph of x<sup>2</sup> The secant line begins with points
+                (0,0) and (1,1). The next line y=0.5x moves the second point closer to (0,0) thus bringing the
+                secant line closer to the desired tangent line. This process is repeated till the 2 points on the graph
+                are close enough that the secant line = tangent line.
+                <br><br>
+                <b>Area Under Curves:</b> Another fundamental problem in Calculus is the area under a certain graph.
+                As shown in the second and third images,the shaded region is the area bounded
+                by the function y=x<sup>2</sup>, the x-axis, and a certain interval. To accurately conclude an area
+                under a curve is quite difficult without Calculus. Following certain Pre-Calculus principles,
+                theoretically, we could find the area under a curve using an ever increasing amount of rectangles to
+                approximate the area. This is similar to the tangent line problem in a way that they both use the
+                limit process. The difference in the two is that for the tangent line problem the
+                difference between the x value between the 2 points approach zero which the number of rectangles
+                under the curve approach infinity. <br> The second image depicts a method known as
+                circumscribing rectangles about the graph which means that the summed area of the rectangles
+                will be over the actual area value under the curve whereas the other inscribed rectangles will be
+                under the actual area value. The principle difference between the two is that the second image has the left
+                endpoints of the rectangles touching the graph while the third image has the right endpoints touching
+                the graph which results in an upper and lower sum.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.2: Graphically and Numerically Determine Limits</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-graphically.png" alt="Sorry :(">
+              <img src="img/APC-numerically.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>To begin with, we can first think of limits as points that either exist or don't.
+                For example, in the graph there is no point at (1,1). However, by analyzing the graphic
+                if a line was to be drawn through the points it would seem that there would be a point (1,1)
+                regardless if it existed or not. So one can conclude that as the limit of the ungraphed function
+                f(x) as x approaches 1 would be 1. In other words, this function (which is not yet graphed) where the
+                x value gets closer to 1, the y value gets closer to 1 as well. <br> Looking at the second image,
+                one can conclude that though there is no point at 1, it seems to be that the y value is approaching 1 when x
+                approaches 1.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.2: Limits That Fail To Exist</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-diffsides.png" alt="Sorry :(">
+              <img src="img/APC-infinite.png" alt="Sorry :(">
+              <img src="img/APC-sinrational.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Important Note: there are 3 ways for a limit to fail to exist.</b>
+                First off, if the limit approaches different values from the left (-) and
+                the right (+), then the limit fails to exist. Second, if the limit approaches
+                infinite, then technically the more specific answer is infinite, but because it <i>is</i>
+                infinite, it does not exist. Third, a limit doesn't exist when the graph oscillates as shown
+                in the third picture. <br> The first graph depicts f(x) = <sup>|x|</sup>&frasl;<sub>x</sub>.
+                The second graph depicts f(x) = <sup>1</sup>&frasl;<sub>x</sub> and the last picture depicts
+                f(x) = sin(<sup>1</sup>&frasl;<sub>x</sub>).
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.3: Analytically Determine Limits and Properties</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-limitproperties.png" alt="Sorry :(">
+              <img src="img/APC-squeezetheorem.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Analytically Determine Limits:</b> I don't mean for this quick review to be a complete walkthrough of every problem. But I merely
+                intend to summarize notable points within each section. For limits, if one can plug in the number then simply
+                plug the number into the function (same thing with trigonometric functions). If it's a constant then the limit for that constant is just the constant itself.
+                Also note that you can factor quadratic equations and you can rationalize denominators as well as numerators.
+                <br><b>Important and Notable Limits:</b> the limit as x approaches 0 for: <sup>sin(x)</sup>&frasl;<sub>x</sub> = 1,
+                for <sup>1-cos(x)</sup>&frasl;<sub>x</sub> = 0, and for (1+x)<sup><sup>1</sup>&frasl;<sub>x</sub></sup> = <i>e</i>.
+                <br><b>Important Theorem: Squeeze Theorem</b>. The Squeeze Theorem basically states that if afunction f(x) is between 2 other functions that share the same
+                limit value at point c, then f(x) not only has a limit at that point but it has the same value. This can be seen in the 2nd image.
+                The green function being greater than the blue one and the red function being lesser than the blue one while
+                the limits of both green and red at c = 0 is 0 meaning that the limit as x approaches 0 for the blue function is also 0.
+                <br> Lastly, one should know that the the limit as x approaches 0 for: <sup>sin(x)</sup>&frasl;<sub>x</sub> = 1 can be manipulated.
+                For example, if a limit as x approaches 0 reads <sup>sin(4x)</sup>&frasl;<sub>x</sub>, then one can multiply both the top and bottom by 4 and factor out the
+                4 from the numerator using the scalar property of limits. Thus one finds themselves multiplying 4 and 1 together.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.4: Continuity</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-discontinuities.png" alt="Sorry :(">
+              <img src="img/APC-IVT.jpg" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Continuity: </b>A function is continuous if it is defined at that point, the limit exists at that point,
+                and the limit at that point is equal to the point itself. If the function fails to satisfy all 3 requirements then it
+                is discontinuous. For discontinuous functions they can either be removable (holes) or nonremovable (asymptotes).
+                As previously said, limits can imply both sides or indicate specifically that they want someone to approach
+                from a certain side the left (-) or the right (+). Another important function is called the
+                floor function otherwise known as the stepwise function which is a normal function except that it, [[x]],
+                rounds down to the greatest integer (i.e. 4.7 would become 4 and 3.3 would become 3). Learn more about stepwise functions <a href="https://www.youtube.com/watch?v=JDuqGsO5eu0" target="_blank">here</a>.
+                <br><b>A Quick Note:</b> a function f(x) is continuous within an interval (a,b) when the limit of f(x) as it
+                approaches a from the right is defined, the point exists, and the limit = the point. This is also required for b
+                except it must approach from the left. The function also needs to be continuous within the interval.
+                This is mostly self-explanatory. It's just saying that [a,b] is continuous if it meets the continuity requirements.
+                <br><b>A Quick Example: </b> the function shown in the picture has a nonremovable discontinuity at the dotted line which is an asymptote
+                and it shows a jump discontinuity at 1 therefore the limit fails to exist though at x = 1, the point is defined.
+                Another notable thing is that in the range of [0,1) it is continuous. The blue circle indicates a hole
+                which means that it is discontinuous there. Also note that as the limit of f(x) approaches 1 from the left it is 1 while
+                from the right is is 6.
+                <br><b>Intermediate Value Theorem: </b> This theorem basically states that if a function is continuous within [a,b] and f(a) doesn't equal
+                f(b), then there is a point c between a and b that k (otherwise known as f(c)) is between f(a) and f(b). This theorem is
+                great for proving for zeroes without ever graphing. As shown in the second image,
+                f(b) is positive and f(a) is negative and since they don't equal nor is it discontinuous, it implies that between a and b there is another point that
+                must be the x-intercept.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.5: Vertical Asymptotes</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-VA.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>The more detailed definition of a vertical asymptote is where the limit of a function as x approaches
+                a certain value equates to infinite. As shown in this graph, as x approaches 0, it becomes infinite.
+                Also note that if one was to approach zero from the left it would go to negative infinite and from the right it would
+                be positive infinite. Knowing that this graph is <sup>1</sup>&frasl;<sub>x</sub>, if one was to solve
+                for the one-sided limit approaching from the left then one should plug in a value near zero but a little less (i.e. -0.001)
+                and similar to this, from the right would be 0.001. Thus one can conclude that 1 divided by -0.001 would yield a great negative number
+                and this number would increased as -0.001 grows smaller so this would be negative infinite. Comparably, 1 divided by 0.001 yields
+                a great positive number so this would become positive infinite.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>1.6: Horizontal Asymptotes</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-HA.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Similar to vertical asymptotes, but the limit definition is: as x approaches positive/negative infinite
+                the limit approaches a single value. For example, in this image to the left, as x approaches negative infinite,
+                the limit value approaches 0 while as x approaches positive infinite, the limit value approaches 0 too. Regarding
+                vertical and horizontal asymptotes, one can solve it via the limit definition or through traditionally learned ways
+                of analyzing the function. Note that this <sup>&#8734;</sup>&frasl;<sub>&#8734;</sub> and <sup>0</sup>&frasl;<sub>0</sub>
+                are both indeterminate forms and should either prompt one to use a different method of solving it or that it is unsolvable.
+                <br><b>A Quick Example: </b> f(x) = <sup>(x<sup>2</sup> + 1)</sup>&frasl;<sub>(x<sup>3</sup> + 1)</sub>. For this
+                example, one would need to reduce the coefficient to the greatest power in the denominator to a constant which prompts
+                the person to divide the top and bottom by x<sup>3</sup>. This would yield <sup><sup>1</sup>&frasl;<sub>x</sub> + <sup>1</sup>&frasl;<sub>x<sup>3</sup></sub></sup>&frasl;<sub>1 + 1</sup>&frasl;<sub>x<sup>3</sup></sub></sup></sub>.
+                After this, one can simply plug in infinite or negative infinite if the question prompts it to the function where any number divided
+                by infinite is 0. This would yield 0 as the answer. This similar concept is applied to square roots.
+                Except for square roots, one must divide both top and bottom by (+/-) &#8730;(x<sup>2</sup>) where the
+                (+/-) corresponds to if x approaches a positive or negative infinite.
+                <br><b>A Notable Limit: </b> the limit as x approaches infinite for <sup>sin(x)</sup>&frasl;<sub>x</sub> is 0.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.1: Derivatives Via the Limit Process</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-nondifferentiable.png" alt="Sorry :(">
+              <img src="img/APC-limitofderivatives.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p> Functions are differentiable if they are continuous and they don't have sharp turns or vertical tangent lines.
+              <br> As shown in the second image, the h can be interchanged with delta x and the a could be interchanged with c.
+              These limit definitions of derivatives are pretty self-explanatory where one just plug in x + h into one's function
+              and subtract the original function from that. Then, continue to simplify till you are able to plug in 0 in place of h to
+              acquire an answer. It is important to know that the first equation only yields the derivative while the second equation yields
+              the tangent line slope at a single point thus it's the derivative but with an x value already plugged in.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.2: Differentiation</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-tangentlineproblem.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><a href="https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf" target="_blank">Here is a link with all the derivatives (excluding a few).</a>
+              I'm sure you are already well acquainted with this, but just in case, if one needed to find an equation of a tangent line at a certain point
+              then first take the derivative, and plug in the x value of the specified point. This would return the person the slope of the tangent line. Lastly,
+              one would need to plug in the point both x and y values into the y = mx + b equation and solve for b to acquire the tangent line equation.
+              <br><b>Position Function and Velocity: </b> the position is as follows: s(t) = at<sup>2</sup> + bt + c. I understand this isn't the conventional usage
+              of variables but in short, a is the acceleration divided by 2, b is the initial velocity, and c is the height. The first derivative of this position function
+              is the velocity and the second derivative of this function is the acceleration. Instantaneous velocity is equivalent to the slope of a tangent line at a certain
+              point whereas average velocity is equivalent to slope over 2 points like the traditional way.
+              <br><b>A Quick Example: </b> the graph shown on the left is y = 5x<sup>2</sup> and the derivative is y' = 10x. The tangent line at 1 would have a slope of 10.
+              5 = 10 + b. b equals -5. Therefore the tangent line at x = 1 for this graph, is y = 10x - 5.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.3: Product/Quotient Rules</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-prodquo.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>The rules are self-explanatory considering you have used them for quite some time.
+                Though we do accustom ourselves to the first and second derivatives, there are higher order derivatives
+                that are specified in different ways. I recommend this <a href="https://www.mathsisfun.com/calculus/derivatives-rules.html">website</a> for
+                a great deal of the differentiation rules.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.4: Chain Rule</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-prodquo.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p> Here is the list of differentiation rules (a different set) again: <a href="https://www.math.ucdavis.edu/~kouba/Math17BHWDIRECTORY/Derivatives.pdf">here</a>.
+                Again, this section is prioritizing the chain rule but also a few other differentiation rules that should just be known.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.5: Implicit Differentiation and Logarithmic Differentiation</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-implicit.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Implicit differentiation:</b> like the previous 2 sections merely require you to understand
+                rules and processes. Note that explicit differentiation should be used unless the y cannot be isolated which then you should use implicit differentiation.
+                Begin by differentiating both sides by <sup>d</sup>&frasl;<sub>dx</sub>. (Make sure that when differentiating y, you must apply cbain rule). For example,
+                y<sup>2</sup> would differentiate into 2y <sup>dy</sup>&frasl;<sub>dx</sub> and so forth. Then simply isolate <sup>dy</sup>&frasl;<sub>dx</sub> using
+                any appropriate way possible to solve for <sup>dy</sup>&frasl;<sub>dx</sub>.
+                <b>Logarithmic Differentiation:</b> you begin by applying ln to both sides. Then, you can use logarithmic properties to simplify and then
+                you proceed as if it was a normal problem. This is especially useful for questions that have a variable to the power of itself (i.e. x<sup>x</sup>).
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.6: Inverses for Derivatives</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-arctrig.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p> Here is a <a href="https://www.math.ucdavis.edu/~kouba/CalcOneDIRECTORY/invtrigderivdirectory/InvTrigDeriv.html">link</a> for
+                all the arc trig functions for derivatives. Those you simply have to know. Moving on, inverse functions have a unique
+                relationship with the parent function. if f(x) was a function and g(x) was the inverse of f(x) (otherwise known as f<sup>-1</sup>(x))
+                then f(g(x)) = x. This basically means that the inverse and the normal functions would cancel out to return the number you began with.
+                taking this into account, if you were to differentiate both sides, then it would look like f'(g(x)) * g'(x) = 1. Then if you solved for
+                the derivative of the inverse it would be: g'(x) = <sup>1</sup>&frasl;<sub>f'(g(x))</sub>. Then, if you ever encounter a problem like this
+                just know to plug in all values and find what you need in order to solve for the derivative of the inverse.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.7: Related Rates</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-relatedrates.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Related rates is just normal differentiation except you are working with real life situations. And instead of differentiating in terms of x, you
+                differentiate in terms of t. The problem would usually give you enough values to either solve for the indicated or it would allow you to use a
+                system of equations to solve for the indicated.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>2.8 Newton's Method</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-newton.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Newton's method is just another way to approximate zeroes.
+                Though this method is, arguably, not that important, it is still noteworthy.
+                You begin by approximating a value close to the actual root by estimating.
+                You then find the tangent line equation at this point and you find where this tangent line
+                crosses the x-axis. This number would then determine your next iteration and as you begin
+                to build up iterations you will soon narrow down to the actual x-intercept. This method
+                is used in calculators to determine roots.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.1: Extremas</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-extrema.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>First off, there are 2 types of extremas. There are absolute/global extremas or
+                relative extremas. Global/Absolute extremas are over a certain interval while relative
+                extremas are over the entire course of the graph. The Extreme Value Theorem states that
+                if a function is continuous within (a,b) then there are extremas. Extremas occur on critical numbers
+                and end points (if on an interval). These critical numbers are found when you set the derivative of a function
+                to 0 or you set the denominator (if it has one of course) to zero. For functions that specify an interval
+                make sure the critical numbers you include in your test for minimums and maximums are within or on the endpoints.
+                For closed intervals, make sure after you find the critical numbers (that are within the interval) to plug them into
+                the original function to find which one has the smallest or greatest number to determine whether its a minimum (smallest value) or
+                a maximum (greatest value).
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.2: Rolle's Theorem and Mean Value Theorem</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-rolle.png" alt="Sorry :(">
+              <img src="img/APC-mean.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Rolle's Theorem:</b> If a function on an interval [a,b] is continuous and is differentiable on (a,b)
+                and f(a) equal f(b) then there is at least one point where the slope of the tangent line is zero.
+                <br><b>Mean Value Theorem:</b> If a function is continuous on [a,b] and differentiable on (a,b) (note that f(a) does not need to equal f(b))
+                then there is at least one point where the tangent line is equal to the slope of (a, f(a)) and (b, f(b)).
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.3: Increasing and Decreasing Intervals and First Derivative Test</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-FDT.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Increasing and Decreasing problems describe original functions (f(x)) where the graph increases and decreases as you look from left to right.
+                To find these intervals, you must first find the derivative and the critical numbers. Plot the critical numbers on a number line, and test values
+                between each interval on that number line and determine whether they are positive of negative (f'(x) > 0 or f'(x) < 0) to determine if they increase or
+                decrease within that interval. If the outputted value is exactly 0 then it is constant within that interval and there is no increasing nor decreasing.
+                The First Derivative Test is basically an extension of this idea where the exact point where it changes from increasing to decreasing is the relative maximum
+                and the point where it changes from decreasing to increasing is the relative minimum. The First and Second Derivative Tests are just two different ways to
+                identify relative extremas.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.4: Concavity and Second Derivative Test</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-SDT.svg" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>To test for concavity, you first find the second derivative then you test for critical values which is
+                basically the same as critical numbers. You plot these numbers on a number line and you test each interval by taking
+                test values and plugging them into the second derivative function to see whether they output a positive or negative number.
+                The positive number indicates a concave up and a negative number indicates a concave down. The points where the function changes
+                concavity is called the points of inflection. After finding the x value for where the concavity changes, plug this point into the original
+                function to find the actual point of inflection. The Second Derivative Test is somewhat useful for finding extremas. You begin by finding the second derivative
+                then you take the critical numbers of the first derivative and you plug them into the second derivative. If the outputted number is positive that means that critical
+                number yields a minimum. If the outputted number is a negative, then that critical number yields a maximum.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.5: Curve Sketching</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-curve.jpg" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Curve sketching is basically a combination of everything I just enumerated and everything that you have previously learned (like horizontal and vertical asymptotes and domains and ranges).
+                It also includes symmetry like determining whether a function is even or odd or neither or both.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>3.6: Optimization</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-opt.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Optimization problems are just like related rates except it's normal and you differentiate in terms of x.
+                You are basically applying Calculus concepts of minimums and maximums to real life situations like maximizing profits.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.1: Integration Rules</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-integration.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>These are just mere rules that you must follow. Note that the "+ C" portion
+                is left for a constant. If the question specifies for a particular solution, then you must
+                solve for the missing value C and find that specific equation. Also understand that integration
+                can be applied to the the velocity and acceleration functions.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.2: Riemann Sums</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-series.png" alt="Sorry :(">
+              <img src="img/APC-upperlower.png" alt="Sorry :(">
+              <img src="img/APC-limitinfinite.png" alt="Sorry :(">
+              <img src="img/APC-midpoint.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>The Riemann Sum concept is the limit as the number of rectangles under a curve approaches infinite which will
+                approximate the area. <a href="http://math2.org/math/expansion/sum-prop.htm">Here</a> is a link to all the series properties.
+                Besides the formulas and the properties, you also must know the general equation of the Riemann Sum.
+                For upper and lower sums, the delta x represents the width of each rectangle and can be found by (using the interval [a,b])
+                subtracting a from b and then dividing it by the variable n. In this case, n is going to be a constant so by using the summation property,
+                you can factor out the delta x. Note that the value inside the function f as shown in the formula is actually equivalent to c<sub>i</sub>.
+                c<sub>i</sub> is equal to the beginning interval (which is a in this case as the interval is [a,b]) + (delta x * i). This holds true
+                for upper sums however lower sums otherwise known as inscribed rectangles, you must multiply delta x with (i - 1) instead of just "i".
+                If you take the limit of this function (regardless whether it's an upper or lower sum) as x approaches infinite, you will be able to approximate
+                the actual area within that interval (usually bounded by the x-axis and the graph). Note that it can also be bounded by the y-axis and in this case, you
+                treat it the same exact way as you would with something bounded by the x-axis.
+                <br><b>Midpoint Rule: </b> The midpoint rule is another way to approximate area though not as accurate as other methods, it still is a valuable method.
+                To begin with, you first begin by drawing a number line from a to b. Divide the interval evenly according to the number of rectangles the questions prompts
+                you for. Then begin by taking the midpoint of each interval. Finally, take those midpoint values you calculated and plug each of them into the equation and
+                sum it all together and multiply by the delta x otherwise known as the width of each rectangle.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.3: More on Definite Integrals</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-integralproperties.png" alt="Sorry :(">
+              <img src="img/APC-trapezoid.png" alt="Sorry :(">
+              <img src="img/APC-trapez.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Note that some riemann sums will have this: "||x|| => 0" which basically means x => infinite.
+                <br><b>The Trapezoid Rule:</b> The Trapezoid Rule is basically a a more
+                accurate wawy of approximating the area under a curve (more accurate than the midpoint method).
+                It follows the format of the area of a trapezoid too.
+                To begin with, you first find the width's of each rectangle, then you start at a
+                and continue adding this width to it. Each time you add a width onto it, that number is plugged into
+                the original function and multiplied by 2 except for a and b in the intervals [a,b] where you only multiply
+                by 1 because the line segments are not repeatedly used. You sum up all the numbers then multiply my
+                delta x and 0.5.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.4: Fundamental Theorems of Calculus</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-FToC.png" alt="Sorry :(">
+              <img src="img/APC-MVTFI.png" alt="Sorry :(">
+              <img src="img/APC-SFToC.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p><b>Fundamental Theorem of Calculus:</b> The First Fundamental Theorem of Calculus is basically
+                a short hand way to calculate riemann sums as shown in the first image.
+                <br><b>The Mean Value Theorem:</b> is just another way to average the area under a curve using a mean.
+                As shown in the 2nd image's bottom equation, (b - a) can usually be easily deduced. You only need to solve
+                for the integral on the left and (b - a) on the right and solve for f(c). Then,you plug in this value as f(x)
+                in the original equation to solve for c. This value should be between a and b.
+                <br><b>The Average Value Theorem:</b> is, simply put, the mean value theorem except it already solved for
+                f(c) for you.
+                <br><b>Second Fundamental Theorem of Calculus:</b> The Second Fundamental Theorem of Calculus is
+                summarized in the last image. Note that the interval [a,x] where a must be a number while the x
+                can be a variable. You simply plug in x into the equation to solve for F'(x) otherwise known as the
+                derivative of the integral which they cancel each other out. However, if the x was replaced with something like
+                an x<sup>2</sup>, then you would need to compensate by multiplying the actual outcome by the derivative of
+                x<sup>2</sup> which is just 2x. if both endpoint numbers happen to be variables, just apply the First Fundamental Theorem of
+                Calculus.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.5: U-Sub</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-usub.png" alt="Sorry :(">
+              <img src="img/APC-evenodd.jpg" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>In summary, u-substitution is similar to chian rule where you take the derivative of the
+                inside function of the larger composite function. To identify cases of appropriate u-subs
+                you must first be able to identify occasions where there are composite functions otherwise
+                parts of an equation where it seems that chain rule might be relevant and applicable.
+                You can then set "u" equal to this inner function and differentiate this inner function.
+                Once differentiated, you can then plug the entire thing back into the integral which should yield
+                a simple integral unless there are still x variables which in this case you should be able to
+                solve for x in where you defined "u". Then you can substitute in this to define all variables in terms
+                of "u". Finally, proceed to solve it normally and make sure to replace "u" with what you set it equal to
+                in the end. U-subbing for definite integrals is the exact same except if you were to find the area
+                in terms of "u", then you must also set the [a,b] intervals in terms of "u" by plugging them
+                into your formulated equation. A few key properties to remember is that for even functions,
+                you can slice the area in half and calculate the area in one quadrant and just double it.
+                For odd functions, they will equal zero because they are symmetrical about the origin.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.6: Integrating for Natural Logs</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-natlog.png" alt="Sorry :(">
+              <img src="img/APC-6integrals.png.jpg" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>There are 3 key points in this chapter so far: when integrating <sup>1</sup>&frasl;<sub>x</sub>
+                it simply converts to ln(x) + C, second, be aware that you can employ long division if given the
+                chance, and finally third, for <sup>1</sup>&frasl;<sub>xln(x)</sub> integrations or anything
+                similar to htis format, know that you can u-sub the ln(x) to virtually cancel out all x variables.
+                For the 6 integrals, these are absolutely necessary and should be memorized as soon as possible.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>4.7: Inverse Functions</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-inversetrig.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>This entire chapter revolves around identifying these inverse trig function
+                patterns and integrating it. However, do keep in mind that some problems are
+                going to mimick these attributes and don't require certain steps as
+                an inverse trig equation demands. Also keep in mind that there are certain equations
+                that can be solved via normally (doesn't need to be turned into an inverse trig function),
+                and some can be solved via completing the square or separating the numerators.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>XXX</u></b></button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/APC-.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <a class="slider slider1" href="index.html">Home</a>
+      <a class="slider slider2 accordion" href="#">Subjects</a>
+      <div class="panel">
+       <p><a href="project4-Subjects-Java.html">Java</a></p>
+       <p><a href="project4-Subjects-APC.html">AP Calculus AB</a></p>
+       <p><a href="project4-Subjects-APM.html">AP Chinese</a></p>
+       <p><a href="project4-Subjects-APUSH.html">AP U.S. History</a></p>
+       <p><a href="project4-Subjects-APL.html">AP Language</a></p>
+       <p><a href="project4-Subjects-APS.html">AP Statistics</a></p>
+      </div>
+      <a class="slider slider3" href="project4-Contacts.html">Contact</a>
+    </div>
+  </main>
+  <!--================FOOTER=================-->
+  <footer>
+  </footer>
+  <!--================FOOTER=================-->
+  <script type="text/javascript" src="js/project4-Subjects-APC.js"></script>
+</body>
+</html>

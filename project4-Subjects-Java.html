@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/project4-Subjects-Java.css">
+  <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+  <title>Re-learning/Java</title>
+</head>
+<body>
+  <!--================HEADER===============-->
+  <header>
+    <nav>
+      <div class="hamburger openClose" onclick="openNav()">
+        <div class="hamburger-div">
+          <span class="span"></span>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Subjects</a>
+            <ul>
+              <li><a href="project4-Subjects-Java.html">Java</a></li>
+              <li><a href="project4-Subjects-APC.html">AP Calculus AB</a></li>
+              <li><a href="project4-Subjects-APM.html">AP Chinese</a></li>
+              <li><a href="project4-Subjects-APUSH.html">AP U.S. History</a></li>
+              <li><a href="project4-Subjects-APL.html">AP Language</a></li>
+              <li><a href="project4-Subjects-APS.html">AP Statistics</a></li>
+            </ul>
+          </li>
+          <li><a href="project4-Contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--================MAIN=================-->
+  <main>
+    <div class="main">
+      <h1>Java</h1>
+      <div class="java-accordion">
+        <div class="java-accordion-inner">
+          <button class="accordion1"><b><u>Python:</u></b> Mad Lib Game</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject1.png" alt="Sorry :(">
+              <img src="img/pythonproject1-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>This beginner Python project is perfect for testing for correct
+                variable usage and concatenation. In Python, the variable usage
+                only ever matters if it is paired with a different datatype. For
+                example, one would need to include a str(int) if one wanted to
+                integrate an integer into a string. This idea is basically concatenation.
+                Other examples of converting variables include float() and int(). For this
+                specific example, it requires the student to create a function with no
+                parameter (and to call this function). Identifiable variable names are given
+                in order to practice good habits. The input's refer to the named variables and
+                in turn these variables are then concatenated with other pieces of string. The
+                "\n" is meant to indicate a line break.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Quiz</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject2.png" alt="Sorry :(">
+              <img src="img/pythonproject2-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>I implore you that you should understand class structures and it's concepts before
+                exploring the rest of this explanation.
+                Though originally this project was not intended to be
+                designed with a class and objects, I nonetheless did it.
+                To explain this version, I simply first created a class called
+                Question. I then created a constructor (def __init__) with
+                the parameters: self, prompt, answer. The self parameter is given
+                by default. Like any conventional constructor, I set self.prompt = prompt
+                and self.answer = answer. Afterwards, I created a list with a few strings that
+                include the questions and the answer choices. To supply the program with answers
+                to these questions, I created a second list that holds the an object that includes
+                the question (i.e. question_prompts[0]) and the correct answer as a letter (i.e. "d").
+                I then created a function called run_quiz(questions) which only takes one parameter
+                "questions" whereas as of now, it is merely a variable to label the parameter. I created
+                a variable called "score" and I set it to 0. Afterwards, I created a for loop that selects the
+                items inside the list called "questions" where the items being selected are given the temporary
+                variable called "question". The variable "answer" is set to the an input statement where
+                the program prompts you with question.prompt which is basically a notation that python uses
+                to access the attributes in an object. Notice that the for loop penetrates through the
+                first layer of the "questions" list. so that the variable "question" represents the
+                "Question(question_prompts[0], "d"...etc)". Then since "question" is set to each one
+                of the list items in "questions", one can then use question.prompt in class notation
+                to access the specific question listed in the other list: question_prompts. The if statement
+                inside the for loop is meant to count the amount of times your inputted answer matches the
+                question.answer which is the lowercase letter within "Question(question_prompts[0], "d")".
+                If it does match, the score is increased by 1. After the for loop ends, I used simple string
+                concatenation to display how many questions you answered correctly out of the total number of
+                questions. Finally, I ran the function with the variabl "questions" to fill in as the parameter.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Factoring</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject3.png" alt="Sorry :(">
+              <img src="img/pythonproject3-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>This simple program allows one to find all the factors
+                of a number. I began with a function called factorials with a parameter
+                of x. I then created an empty list called factor_list which we would append
+                all the numbers that evenly divide into the inputted number. I created a
+                for loop which sets the variable value to a number within the range of
+                the inputted number + 1, to 0 (not including 0), and it decreases by 1 (hence the -1).
+                I created an if statement inside the for loop that has a condition that if the inputted
+                value (x) is evenly divided by the value within the specified range (hence the modulos %
+                which calculates the remainder after division so if set to 0 it would be evenly divided), then
+                it would set that evenly divided number to "y" and it would then be appended to the empty list
+                called factor_list. After the for loop, the list would be printed out. Lastly, I
+                called the function with an integer-based input that prompts the use to enter an integer number.
+                This integer number would of course be passed into the function set to the variable "x".
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Rock, Paper, Scissors</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject4.png" alt="Sorry :(">
+              <img src="img/pythonproject4-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>This simple game is complicated in Python. I first had to import
+                sys and random in order to generate some random choices from the computer.
+                user1_answer is the input the player gets where they are prompted to choose
+                rock, paper or scissors. I created another list that has 3 items that has the
+                exact strings of "rock", "paper", and "scissors". user2_answer is the computer
+                generated answer where I used the random module to randomly select a choice from
+                the specified list. I then printed the user2_answer knowing full well that the
+                player has already inputted his/her choice. I created a function that takes 2
+                parameters: u1, and u2. I then began the tedious process of using the conditional
+                if statement to figure out each possibility and return a string that tells who won.
+                Lastly, I printed while calling the compare function with user1_answer and user2_answer
+                as the parameters.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Reversing Strings</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject5.png" alt="Sorry :(">
+              <img src="img/pythonproject5-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>This simple reverse function takes no parameters and is merely just called.
+                I created a variable string that refers to the user input string. I created
+                an empty string to house the end product. Afterwards, I created a for loop
+                where letter refers to the position of each letter in the inputted string.
+                I subtracted 1 because the length counts all the letter starting from 1. It
+                continues to -1 where it does not include -1 meaning it ends at the 0 value which
+                is crucial when talking about counting in Python where most things begin at 0. The last
+                -1 is meant to specify the intervals at which it decreases which is 1. Within the for loop,
+                I appended the each letter of the inputted string into another_string however since the range
+                goes from the last position to the first, it reverses the entire string. Lastly, I printed the
+                reversed string.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Guessing the Computer's Random Number</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject6.png" alt="Sorry :(">
+              <img src="img/pythonproject6-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p>Though this function does look complicated it is merely
+                just a concoction of many variables and if statements. The
+                random module is imported to provide a random number. The
+                function play_agains is empty and is merely just called.
+                I created the variable random_generated_number which
+                converts a random number from the range 1 to 101 (not including 101)
+                to an integer. I prepared a few variables like user_guess and guesses
+                to initially have virtually nothing. I created a while loop that each time
+                it loops it adds 1 to the guesses variable where it cannot surpass 7 meaning
+                there are 7 attempts (guesses begins at 0). I printed the random_gemerated_number
+                as to serve as a value to test if the program is running properly. I prompt the
+                user for a guess between 1 and 100 and I set this variable to user_guess. I then
+                continued with a set of conditional statements that prints out whether the person
+                guessed too low, too high, or they got it right. After the statement, I included
+                guesses_left to inform the user of how many guesses they have left. Outside of the
+                for loop, I also included this to tell how many guesses the user had left at the end of the
+                guessing game. I then created another simple if statement that asks the user if they want to play again.
+                If the inputted answer to this conditional statement is "no", then it would end, if it was "yes",
+                then it would call itself to repeat the entire process with a new randomly generated number.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Python:</u></b> Computer Guesses Your Number</button>
+          <div class="panel1">
+            <div class="pythonproject">
+              <img src="img/pythonproject7.png" alt="Sorry :(">
+              <img src="img/pythonproject7-output.png" alt="Sorry :(">
+            </div>
+            <div class="pythonexplanation">
+              <p> This project is similar to the last where it involves guessing a number. However,
+                this one involves the computer guessing the user's number which is never inputted in.
+                This method is similar to binary searching where the computer continually divides the
+                appropriate range in half until it narrows down to only your number. In the meantime, you
+                give the computer clues by telling it if it is too high or too low in order to appropriately narrow
+                down the range. In this project, the computer begins with guessing 50 and if it was told that it was too
+                low, then it would set the start value to the guessed number (50). Whereas, if it was told that it was too
+                high, then the end value would be set to computer number. This repeats until it either correctly guesses your number
+                or the user fails to provide the computer with clues. I created another if statement where it tells the user whether
+                the computer won or lost and if the user wants to play again, similar to the previous project.
+              </p>
+            </div>
+          </div>
+
+          <button class="accordion1"><b><u>Java:</u></b> Drawing</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject1.png" alt="Sorry :(">
+              <img src="img/javaproject1-class.png" alt="Sorry :(">
+              <img src="img/javaproject1-2.png" alt="Sorry :(">
+              <img src="img/javaproject1-3.png" alt="Sorry :(">
+              <img src="img/javaproject1-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p> Java is much more complicated in terms of syntax than Python. To begin with,
+                the imports are jaw-dropping. One must use the extension, ".awt", to access java's
+                package called Abstract Window Toolkit. It allows for a programmer to create images on
+                a window. We begin by importing Color and Graphics. We then import Graphics2D, Rectangle, and the sub-extension ".geom"
+                to access Ellipse2D and Line2D to create more specific ellipses and lines. Finally,
+                for the imports, we import "javax.swing.JComponent".JComponent, in summary, is an abstract class
+                that provides greater functionality like the ".awt" extension. The second image depicts the 2 classes
+                needed for this project which are FaceComponent and FaceViewer. We begin with a normal public class
+                called FaceComponent which <u>extends</u> the JComponent abstract class to provide extra functionality.
+                We then include a method called paintComponent which is essential that it is typed exactly like this. It
+                takes an object from the Graphics class and this variable is called g in this case. As the picture describes,
+                we need to recover the Graphics2D. (Graphics2D) g must be typed this exact way whereas the "g2" can be anything
+                because it is a variable. Next, we create a few new color combinations and store them in a variables greyPink and
+                darkGreen which is self-explanatory. We then take g2 and set its color to pink which is one of many default colors.
+                We create an ellipse next. Note that teh ".Double" extension is meant to give specified instructions as to the location
+                of your drawn ellipse. This ellipse is stored in the variable called head1. Also note that the parameters within the
+                parentheses specifies in this specific order: (x position, y position, width, length). After setting the color, when you
+                draw the ellipse, it will only show that ellipse with an outlined color. To fix this problem, one can just simply do
+                "g2.fill(head1);". This process is repeated for 2 more ellipses, then the mouth is created by using the Line2D.Double in the
+                same sense where you specify (x start position, y start position, x end position, y end position). Lastly, one can finish with
+                "g2.drawString();" to insert a message where the numbered arguments specify the position of where the string begins.
+                <br><br>
+                The second class includes the imported package called JFrame from ".swing". JFrame is basically a container that holds buttons,
+                textfields, and whatnot to create a user interface. I created a new JFrame(); and gave it the variable name of "frame".
+                The next few commands like ".setSize();" and ".setTitle();" set the size of the window by width and height and give the window a title.
+                The ".setDefaultCloseOperator(JFrame.EXIT_ON_CLOSE);" allows the user to specify a method to close the window. Then, the FaceComponent class
+                is called and it is added via the ".add();" function to the JFrame. Lastly, the visibility is set to true to ensure that it is able to be seen.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Inputs</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject2-output.png" alt="Sorry :(">
+              <img src="img/javaproject2.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>This project focuses on the java.util.Scanner which allows for the user to input
+                datatypes into the program. A standard class is created. We create a new Scanner by doing
+                "Scanner anyVariableHere = new Scanner(System.in);". Afterwards, we print out something that prompts
+                the user for an input. We follow this prompt with an anyVariableHere.nextdataType();. Then, this can be set
+                to a variable in case the programmer wants to manipulate the user input. For example, ".nextInt();" specifies
+                an expected integer, while ".nextLine();" specifies an expected String, and ".nextDouble();" specifies an expected
+                double (otherwise a float in Python). We finally finish with printing format which is specified by "printf". The programmer
+                can include %n where n can any specified format on the format page <a href="https://dzone.com/articles/java-string-format-examples">here</a>.
+                Then, there is a comma followed by variables that correspond in order and in format to the %n's.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Math</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject3.png" alt="Sorry :(">
+              <img src="img/javaproject3-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>This one is similar to the previous one except this time the programmer must
+                calculate a few certain numbers. This, of course, is easily done with arithmetic operators.
+                However, to calculate the minimum, maximum, and the absolute value would require either more programming
+                or a new package. The java.lang.Math package allows us to calculate the minimum, maxmimum, and absolute value.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Even or Odd</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject4.png" alt="Sorry :(">
+              <img src="img/javaproject4-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>This one is fairly standard with a scanner. However, this program requires a conditional statement
+                that tests if the inputted number is evenly divisible by 2 or not to determine whether the number is even
+                or odd. Like in Python, this can be done with the "%" sign.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Rock, Paper, Scissors</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject5.png" alt="Sorry :(">
+              <img src="img/javaproject5-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>This program, initially, looks like a mess and in a way, it is. To cover the
+                general premise of this function, I encased the entire program in a while loop
+                that continues to loop while the String "playAgain" is equal to "yes". At the end
+                of the program, I have a set of conditional statements that asks the user if they want to play
+                again which prompts them for a "yes or no" answer which decides if the while loop will loop once
+                again. I created a variable that accessed the Random class and I generated a random number
+                from 0 to 3 (not including 3). This number is then ran through a conditional statement which
+                decides whether it is a rock (R), paper (P), or scissors (S). I then have another set of conditional
+                statements to test all the possibilities and I had the system print out which side won. One important
+                thing to note for this project is that, unlike Python, in Java one must do ".equals()" to test if
+                a variable is equal to the given string.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Loop Practice</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject6.png" alt="Sorry :(">
+              <img src="img/javaproject6-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>This short practice describes 3 different types of loops.
+                The first loop is a standard while loop that begins with the
+                integer "i", and it increases at increments of 1 smybolized by
+                the "i++" where when it reaches 4, the loop will stop running
+                and printing our the current number. The second loop is
+                similar except it begins with "do" and ends in while. In summary,
+                this loop is going to execute the command at least once before
+                checking the "while" condition. The last example is a standard loop where
+                the for loop requires 3 statements: the first being defining the interval integer,
+                the second being the condition, and the last being the increments at which it increases.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Number's</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject7.png" alt="Sorry :(">
+              <img src="img/javaproject7-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p> We begin by importing java.util.Scanner because we want the user to prompt for
+                a certain number. After creating the standard classes, I created a nested for loop.
+                Now, a nested for loop, loops through the outer loop once but it specifies how many times
+                the inner loop loops through for each one loop of the outer loop. I prepared a variable
+                called "i" and began at 1 because the default would be 0 instead. I created a condition so that
+                "i" would go up to the inputted "number" variable. And for every one loop of the outer loop, the inner loop
+                with a locally defined variable "j", will loop as many times up to the numerical value of the variable "i".
+                And for each loop of the inner loop, it will print out "i". THus it will print out the a certain number
+                with that number's number of iterations (designated on the same line by the "System.out.print" and the "System.out.println" outside of the inner
+                loop but inside of the outer loop).
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> While Loops and If Statements</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject8.png" alt="Sorry :(">
+              <img src="img/javaproject8-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>For this project, I began with 2 standard imports so I can prompt the user for an input
+                and also apply some math functions. I prompted the user for an integer number and I
+                stored it in a variable called "number". Then I prepared 3 integer variables for 3 separate
+                while loops. Each while loop begins by looping through until it reaches the number - 1.
+                Each while loop has an if statement to test each number to see if it is adequate for the
+                condition whether the condition is if it's a perfect square, if it's divisible by 10, or
+                if it's two to the power to a certain number while being under the variable "number" value.
+                A few notable things include that (int) will check if the value is an integer and System.out.print
+                will print things on the same line instead of System.out.println where it enters the next line after
+                a print.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Perfect/Deficient/Abundant Numbers</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject9.png" alt="Sorry :(">
+              <img src="img/javaproject9-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p> I began by importing the scanner like normal and ArrayList which will basically
+                create a list like in Python. I prompted for the viewer to input a number to go up to
+                and I created an empty array for integers. I looped from the beginningValue of 1 all the way
+                up to the actual inputted number and appended each value that was a perfect factor to the
+                empty array. I then created another loop that would loop through all the numbers in the
+                list of factors except for the actual number itself and summed all of them up. I finished
+                with an if statement that would gauge whether the inputted number would be a perfect, deficient,
+                or an abundant number.
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> XXX</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject_.png" alt="Sorry :(">
+              <img src="img/javaproject_-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <a class="slider slider1" href="index.html">Home</a>
+      <a class="slider slider2 accordion" href="#">Subjects</a>
+      <div class="panel">
+       <p><a href="project4-Subjects-Java.html">Java</a></p>
+       <p><a href="project4-Subjects-APC.html">AP Calculus AB</a></p>
+       <p><a href="project4-Subjects-APM.html">AP Chinese</a></p>
+       <p><a href="project4-Subjects-APUSH.html">AP U.S. History</a></p>
+       <p><a href="project4-Subjects-APL.html">AP Language</a></p>
+       <p><a href="project4-Subjects-APS.html">AP Statistics</a></p>
+      </div>
+      <a class="slider slider3" href="project4-Contacts.html">Contact</a>
+    </div>
+  </main>
+  <!--================FOOTER=================-->
+  <footer>
+  </footer>
+  <!--================FOOTER=================-->
+  <script type="text/javascript" src="js/project4-Subjects-Java.js"></script>
+</body>
+</html>
