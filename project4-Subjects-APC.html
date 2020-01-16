@@ -559,6 +559,7 @@
             <div class="pythonproject">
               <img src="img/APC-differentials.png" alt="Sorry :(">
               <img src="img/APC-slopefields.png" alt="Sorry :(">
+              <img src="img/APC-euler.png" alt="Sorry :(">
             </div>
             <div class="pythonexplanation">
               <p>Differential equations are just sets of equations combined together to fuse a larger equation. These equations 
@@ -575,6 +576,15 @@
                 (make sure it is equal to the derivative) and these x and y values would determine the slope at that given point. 
                 After enough slope line segments have been placed on the graph, one can generally determine what a solution looks 
                 like on a graph.
+                <br>
+                Euler's Method is another prominent idea in this chapter. Execution of it is fairly simple. You begin with a table
+                that has x, y, and the first derivative values at the given x value. You are usually given a specified amount of 
+                iterations you have to do and a specified increment, h. The general formula to determine the next y-value in the 
+                table (to determine the first derivative at a point one would usually just need the x and y values) is y + hF(x, y).
+                the y value is the value previous of the coordinate you are trying to find (hence why they grant you an initial
+                starting point). The x value is also from the previous coordinate. In summary, the equation is the previous y value
+                plus the increment scale multiplied by previous x and y values plugged into the differential equation. Euler's Method 
+                can determine specific functions. 
               </p>
             </div>
           </div>
