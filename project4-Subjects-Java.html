@@ -523,7 +523,26 @@
                 is that if it doesn't satisfy the first condition, then it will just print out the values normally. Notice how there is only 1 value being 
                 incremented and it is incremented twice throughout the entire project. That is because the second "x++;" only pertains to the while 
                 loop while the other outside of that loop.
-                
+              </p>
+            </div>
+          </div>
+          <button class="accordion1"><b><u>Java:</u></b> Finding the Probability of a String of 6 in an Array of 100</button>
+          <div class="panel1">
+            <div class="javaproject">
+              <img src="img/javaproject13.png" alt="Sorry :(">
+              <img src="img/javaproject13-output.png" alt="Sorry :(">
+            </div>
+            <div class="javaexplanation">
+              <p>Similar to the last one, this one has a slight variation. The innermost while loop has an if statement that checks a periodically 
+                incremented variable that is created outside the innermost while loop and inside the conditional statement that checks if 
+                one value is equal to the next value. This variable is then counting the amount of times the innermost while loop iterates. If 
+                there are 5 intervals then it will increment a counter variable that is outside of the outer while loop. This first counter variable 
+                counts how many strings of 6's or 7's or 8's (etc). This means that my first counter variable can be more than 1 or 2 since 
+                it will not break after finding a single string of adjacent 6's. Outside of the outer while loop (which loops through the 100 items of each
+                array), the loop is surrounded by a larger for loop that iterates 10,000 times with a second array counter. This second array counter 
+                is incremented inside the largest for loop but outside the outer most while loop. It is incremented only if the first counter variable 
+                is greater than or equal to 1 meaning it will only increment if there is at least 1 string of 6 or more. Lastly, I printed out this 
+                final counter for the predicted probability to be 54-55 percent.
               </p>
             </div>
           </div>
