@@ -554,7 +554,28 @@
               <img src="img/javaproject14-output.png" alt="Sorry :(">
             </div>
             <div class="javaexplanation">
-              <p>
+              <p>I firstly began by prompting the user for how many desired inputs they wanted and these inputs are facilitated
+                by the next 2 following for loops where 2 empty arraylists (one for strings and one for integers) are filled 
+                accordingly to the user input. My next 2 for loops are to find the string (in the string array) with the greatest 
+                length and to find the integer (in the integer array) with the greatest numerical value. I also, and this is important, 
+                found the absolute value of the utmost minimum value in the integer array. I followed that with an enormous if statement 
+                that checks if the minimum value (with no absolute value applied to it) is greater than (the else statement) 
+                or less than zero (the if statement). To begin with, if the minimum value is greater than zero then the program will 
+                simply loop through the entirety of the integer array, set the value in the integer array (source) to the variable 
+                "arrayValue". It will then print the specified word you inputted as the user, and then find the difference in length 
+                between the longest word and the shortest word current word. Given this difference, it will loop through the following 
+                loop a specified amount of times (such that all the words would line up). I then printed a vertical slash to indicate 
+                that all the empty spaces and difference in length have been accomodated for. I then loop through another for loop 
+                that prints the appropriate amount of asterisks. The if statement, on the other hand, is a bit more complicated. I 
+                perform similarly as in the else statement, but I also calculate the difference between the absolute value of the minimum
+                and the current integer in the "source" integer array. The following loop accomodates for differences in word length. Then, 
+                the succeeding if statement checks if the current integer value is above or below zero. If the current "arrayValue" is 
+                greater than zero (the else if statement), it will loop until it has accomodated for the difference in numerical value for the 
+                integers (such that the current value will accomodate for the negative spaces provided by the negative integer). Then it will 
+                simply print the vertical slash and the appropriate number of asterisks. However, if the current "arrayValue" is below zero, 
+                the 2 for loops would not only accomodate for the negative integer but also for the discrepancy in length such that the vertical 
+                slashes would all be vertically aligned. 
+                
               </p>
             </div>
           </div>
